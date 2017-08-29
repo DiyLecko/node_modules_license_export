@@ -6,7 +6,8 @@
   "scripts": {
     "export": "node index.js"
   },
-  "author": "lecko9505@gmail.com",
+  "repository": "https://github.com/DiyLecko/node_modules_license_export",
+  "author": "DiyLecko <diy_lecko@naver.com> (http://blog.naver.com/diy_lecko)",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
