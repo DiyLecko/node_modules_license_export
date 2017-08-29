@@ -14,15 +14,9 @@ fs.readFile('package.json', (err, data) => {
   	  if (error) throw error;
 
       var $ = cheerio.load(body);
-      var license = 'None';
+      var license = $('.sidebar').children('ul.box').first().children('li').last().children('a').text();
 
-      var postElements = $("#user-content-license");
       console.log(url);
-      postElements.each(function() {
-        var postTitle = $(this).parent().next().text();
-        license = postTitle;
-      });
-
       console.log('License: ', license);
 	  })}(url));
 	}
